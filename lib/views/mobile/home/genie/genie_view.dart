@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/dotted_seperator_view.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/widgets/dotted_seperator_view.dart';
 
 class GenieView extends StatelessWidget {
   const GenieView({Key? key}) : super(key: key);

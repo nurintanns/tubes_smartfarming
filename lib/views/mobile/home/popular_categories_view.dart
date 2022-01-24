@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/popular_category.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:smartfarming/models/popular_category.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
 
 class PopularCategoriesView extends StatelessWidget {
   final categories = PopularCategory.getPopularCategories();

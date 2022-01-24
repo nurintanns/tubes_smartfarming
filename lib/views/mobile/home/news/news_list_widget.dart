@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_list_item.dart';
+import 'package:smartfarming/views/mobile/home/news/news_list_item.dart';
 
 Widget listWidget(ListItem item) {
   return Card(

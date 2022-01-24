@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/responsive.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/widgets/responsive.dart';
 
 class SwiggySafetyBannerView extends StatelessWidget {
   const SwiggySafetyBannerView({Key? key}) : super(key: key);

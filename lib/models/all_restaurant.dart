@@ -1,4 +1,4 @@
-import 'package:swiggy_ui/models/spotlight_best_top_food.dart';
+import 'package:smartfarming/models/spotlight_best_top_food.dart';
 
 import 'indian_food.dart';
 

@@ -1,6 +1,6 @@
 {
-    "name": "swiggy_ui",
-    "short_name": "swiggy_ui",
+    "name": "smartfarming",
+    "short_name": "smartfarming",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/prediksi.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/prediksi.dart';
 
 class PrediksiRepository{
 List<Prediksi> _prediksi = <Prediksi>[];

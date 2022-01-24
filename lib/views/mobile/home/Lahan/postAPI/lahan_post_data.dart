@@ -2,8 +2,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Beranda/home_slider.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/postAPI/lahan_post_model.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/postAPI/lahan_post_model.dart';
 import 'package:http/http.dart' as http;
 
 class LahanPostHeader extends StatelessWidget {

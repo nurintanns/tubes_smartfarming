@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Beranda/home_slider.dart';
-import 'package:swiggy_ui/views/mobile/home/Beranda/homepage.dart';
-import 'package:swiggy_ui/views/mobile/home/login_view.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/homepage.dart';
+import 'package:smartfarming/views/mobile/home/login_view.dart';
 
 class NavDrawer extends StatelessWidget {
   @override

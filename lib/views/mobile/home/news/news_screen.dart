@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_detail.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_list_item.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_list_widget.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_screen.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/views/mobile/home/news/news_detail.dart';
+import 'package:smartfarming/views/mobile/home/news/news_list_item.dart';
+import 'package:smartfarming/views/mobile/home/news/news_list_widget.dart';
+import 'package:smartfarming/views/mobile/home/news/news_screen.dart';
 import 'package:lipsum/lipsum.dart' as lipsum;
 
 class NewsPage extends StatefulWidget {

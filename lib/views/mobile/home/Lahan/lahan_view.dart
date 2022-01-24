@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/prediksi.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/lahan_repository.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/movie.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/detailed_screen.dart';
-import 'package:swiggy_ui/views/mobile/home/submit_form.dart';
-import 'package:swiggy_ui/views/mobile/home/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/prediksi.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/lahan_repository.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/movie.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/detailed_screen.dart';
+import 'package:smartfarming/views/mobile/home/submit_form.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
 
 class LahanHeader extends StatelessWidget {
   @override

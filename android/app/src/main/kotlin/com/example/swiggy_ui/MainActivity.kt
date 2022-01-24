@@ -1,4 +1,4 @@
-package com.example.swiggy_ui
+package com.example.smartfarming
 
 import io.flutter.embedding.android.FlutterActivity
 

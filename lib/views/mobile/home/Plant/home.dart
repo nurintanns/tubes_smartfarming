@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Plant/detail.dart';
+import 'package:smartfarming/views/mobile/home/Plant/detail.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class HomePage extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
 
 
 class HomePageLahan extends StatelessWidget {

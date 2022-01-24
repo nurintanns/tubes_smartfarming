@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/lahan_view.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/postAPI/lahan_post_data.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/lahan_view.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/postAPI/lahan_post_data.dart';
 
 
 final List<String> imgList = [

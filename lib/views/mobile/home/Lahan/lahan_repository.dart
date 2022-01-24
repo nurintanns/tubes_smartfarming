@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/movie.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/movie.dart';
 import 'package:http/http.dart' as http;
 
 class LahanRepository{

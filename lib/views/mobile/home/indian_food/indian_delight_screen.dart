@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
 
 import '../groceries/grocery_screen.dart';
 

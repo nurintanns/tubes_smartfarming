@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/movie.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/lahan_view.dart';
-import 'package:swiggy_ui/views/mobile/home/drawer.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/movie.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/lahan_view.dart';
+import 'package:smartfarming/views/mobile/home/drawer.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key, required this.movie}) : super(key: key);

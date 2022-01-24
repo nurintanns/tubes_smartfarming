@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/lahan_view.dart';
-import 'package:swiggy_ui/views/mobile/home/Lahan/dataAPI/prediksi.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/lahan_view.dart';
+import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/prediksi.dart';
 
 
 class SubmitFormHeader extends StatelessWidget {
