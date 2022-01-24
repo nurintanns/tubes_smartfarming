@@ -201,7 +201,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _productItem({required String title, image, price, required bool isFavorited}) {
+  Widget _productItem(
+      {required String title, image, price, required bool isFavorited}) {
     return Container(
       padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -290,5 +291,9 @@ class Product {
   String image;
   String desc;
 
-  Product({required this.title, required this.price, required this.image, required this.desc});
+  Product(
+      {required this.title,
+      required this.price,
+      required this.image,
+      required this.desc});
 }
