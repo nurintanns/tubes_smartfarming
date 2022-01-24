@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/prediksi.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/lahan_repository.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/movie.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/detailed_screen.dart';
-import 'package:smartfarming/views/mobile/home/submit_form.dart';
-import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/prediksi.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_repository.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/movie.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/detailed_screen.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/submit_form.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Beranda/home_slider.dart';
 
 class LahanHeader extends StatelessWidget {
   @override
@@ -21,7 +21,7 @@ class LahanHeader extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomeSlider()),
+                  MaterialPageRoute(builder: (context) => HomePageLahan()),
                 );
               },
             )),
@@ -90,28 +90,35 @@ class _LahanCardState extends State<LahanCard> {
                     if (movies[index].param2 != '-') {
                       if (int.parse(movies[index].param2.replaceAll('%', '')) >=
                           35) {
-                        kadarAir = Text('Kadar Air ' + movies[index].param2 + '%',
+                        kadarAir = Text(
+                            'Kadar Air ' + movies[index].param2 + '%',
                             style: TextStyle(color: Colors.red));
                       }
                     }
                     if (movies[index].param3 != '-') {
-                      if (int.parse(movies[index].param3.replaceAll(' mm/hari', '')) >=
+                      if (int.parse(movies[index]
+                              .param3
+                              .replaceAll(' mm/hari', '')) >=
                           200) {
-                        curahHujan = Text('Curah Hujan ' + movies[index].param3 + "mm/hari",
+                        curahHujan = Text(
+                            'Curah Hujan ' + movies[index].param3 + "mm/hari",
                             style: TextStyle(color: Colors.red));
                       }
                     }
                     if (movies[index].param4 != '-') {
-                      if (int.parse(movies[index].param4.replaceAll(' C', '')) >=
+                      if (int.parse(
+                              movies[index].param4.replaceAll(' C', '')) >=
                           25) {
                         suhu = Text('Suhu ' + movies[index].param4,
                             style: TextStyle(color: Colors.red));
                       }
                     }
                     if (movies[index].param5 != '-') {
-                      if (int.parse(movies[index].param5.replaceAll(' %RH', '')) <=
+                      if (int.parse(
+                              movies[index].param5.replaceAll(' %RH', '')) <=
                           50) {
-                        kelembapan = Text('Kelembapan ' + movies[index].param5 + '%RH',
+                        kelembapan = Text(
+                            'Kelembapan ' + movies[index].param5 + '%RH',
                             style: TextStyle(color: Colors.red));
                       }
                     }
@@ -142,13 +149,17 @@ class _LahanCardState extends State<LahanCard> {
                                 ),
                                 TextButton(
                                   child: Text("Prediksi"),
-                                  onPressed: ()  async {
-                                    Prediksi predict = await Prediksi.fetchPrediksi(movies[index].id_lahan);
+                                  onPressed: () async {
+                                    Prediksi predict =
+                                        await Prediksi.fetchPrediksi(
+                                            movies[index].id_lahan);
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                SubmitFormHeader(prediksi: predict,)));
+                                                SubmitFormHeader(
+                                                  prediksi: predict,
+                                                )));
                                   },
                                 ),
                                 const SizedBox(width: 8),

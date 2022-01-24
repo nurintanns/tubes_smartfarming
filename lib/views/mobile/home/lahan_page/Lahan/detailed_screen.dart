@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/dataAPI/movie.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/lahan_view.dart';
-import 'package:smartfarming/views/mobile/home/drawer.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/movie.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key, required this.movie}) : super(key: key);
@@ -11,7 +10,6 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          drawer: NavDrawer(),
           backgroundColor: Color(0xff558b2f),
           appBar: AppBar(
             title: Text(movie.nama_lahan),
@@ -46,7 +44,7 @@ class DetailScreen extends StatelessWidget {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                               textAlign: TextAlign.center),
-                          Text("("+movie.param2_timestamp+")",
+                          Text("(" + movie.param2_timestamp + ")",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 8),
                               textAlign: TextAlign.center)
@@ -71,7 +69,7 @@ class DetailScreen extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          Text("("+movie.param3_timestamp+")",
+                          Text("(" + movie.param3_timestamp + ")",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 8),
                               textAlign: TextAlign.center)
@@ -92,7 +90,7 @@ class DetailScreen extends StatelessWidget {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                               textAlign: TextAlign.center),
-                          Text("("+movie.param4_timestamp+")",
+                          Text("(" + movie.param4_timestamp + ")",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 8),
                               textAlign: TextAlign.center)
@@ -113,7 +111,7 @@ class DetailScreen extends StatelessWidget {
                               style:
                                   TextStyle(color: Colors.white, fontSize: 10),
                               textAlign: TextAlign.center),
-                          Text("("+movie.param4_timestamp+")",
+                          Text("(" + movie.param4_timestamp + ")",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 8),
                               textAlign: TextAlign.center)

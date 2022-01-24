@@ -105,7 +105,7 @@ class _NewsPageState extends State<NewsPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 110.0,
+        toolbarHeight: 90.0,
         leading: IconButton(
             icon: const Icon(
               Icons.arrow_back,

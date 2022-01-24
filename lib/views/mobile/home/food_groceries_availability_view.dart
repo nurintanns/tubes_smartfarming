@@ -95,7 +95,6 @@ class _FoodGroceriesAvailabilityView
                 )
               ],
             ),
-
           Container(
             width: MediaQuery.of(context).size.width,
             height: 190,
@@ -149,90 +148,6 @@ class _FoodGroceriesAvailabilityView
               )
             ],
           ),
-
-          // Stack(
-          //   children: <Widget>[
-          //     ClipRRect(
-          //       borderRadius: BorderRadius.circular(10.0),
-          //       child: InkWell(
-          //         child: Container(
-          //           height: 150.0,
-          //           color: swiggyOrange,
-          //           child: Column(
-          //             crossAxisAlignment: CrossAxisAlignment.stretch,
-          //             children: <Widget>[
-          //               Align(
-          //                 alignment: Alignment.topLeft,
-          //                 child: FractionallySizedBox(
-          //                   widthFactor: 0.7,
-          //                   child: Padding(
-          //                     padding: const EdgeInsets.all(15.0),
-          //                     child: Column(
-          //                       crossAxisAlignment: CrossAxisAlignment.start,
-          //                       children: <Widget>[
-          //                         Text(
-          //                           'Restaurants',
-          //                           style: Theme.of(context)
-          //                               .textTheme
-          //                               .headline4!
-          //                               .copyWith(color: Colors.white),
-          //                         ),
-          //                         UIHelper.verticalSpaceExtraSmall(),
-          //                         Text(
-          //                           'No-contact delivery available',
-          //                           style: Theme.of(context)
-          //                               .textTheme
-          //                               .bodyText1!
-          //                               .copyWith(color: Colors.white),
-          //                         )
-          //                       ],
-          //                     ),
-          //                   ),
-          //                 ),
-          //               ),
-          //               const Spacer(),
-          //               Container(
-          //                 height: 45.0,
-          //                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          //                 color: darkOrange,
-          //                 child: Row(
-          //                   children: <Widget>[
-          //                     Text(
-          //                       'View all',
-          //                       style: Theme.of(context)
-          //                           .textTheme
-          //                           .bodyText1!
-          //                           .copyWith(
-          //                               color: Colors.white, fontSize: 18.0),
-          //                     ),
-          //                     UIHelper.horizontalSpaceSmall(),
-          //                     const Icon(
-          //                       Icons.arrow_forward,
-          //                       color: Colors.white,
-          //                       size: 18.0,
-          //                     ),
-          //                   ],
-          //                 ),
-          //               )
-          //             ],
-          //           ),
-          //         ),
-          //       ),
-          //     ),
-          //     Positioned(
-          //       top: -10.0,
-          //       right: -10.0,
-          //       child: ClipOval(
-          //         child: Image.asset(
-          //           'assets/images/food1.jpg',
-          //           width: 130.0,
-          //           height: 130.0,
-          //           fit: BoxFit.cover,
-          //         ),
-          //       ),
-          //     ),
-          //   ],
-          // ),
           UIHelper.verticalSpaceMedium(),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,

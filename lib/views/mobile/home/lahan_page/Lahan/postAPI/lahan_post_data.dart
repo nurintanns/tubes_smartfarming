@@ -2,8 +2,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:smartfarming/views/mobile/home/Beranda/home_slider.dart';
-import 'package:smartfarming/views/mobile/home/Lahan/postAPI/lahan_post_model.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Beranda/home_slider.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/postAPI/lahan_post_model.dart';
 import 'package:http/http.dart' as http;
 
 class LahanPostHeader extends StatelessWidget {
@@ -20,7 +20,7 @@ class LahanPostHeader extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomeSlider()),
+                  MaterialPageRoute(builder: (context) => HomePageLahan()),
                 );
               },
             )),
@@ -33,8 +33,8 @@ class LahanPost extends StatefulWidget {
   _LahanPostState createState() => _LahanPostState();
 }
 
-Future<LahanModel> submitData(String nama_lahan, String luas_lahan_klonal, String luas_lahan_total,
-    String luas_lahan_seedling, String param1) async {
+Future<LahanModel> submitData(String nama_lahan, String luas_lahan_klonal,
+    String luas_lahan_total, String luas_lahan_seedling, String param1) async {
   Uri apiURL = Uri.parse("http://agriradar.id/api/web/v1/lahans/post-lahan");
 
   var apiResult = await http.post(apiURL, body: {
@@ -59,7 +59,7 @@ Future<LahanModel> submitData(String nama_lahan, String luas_lahan_klonal, Strin
 class _LahanPostState extends State<LahanPost> {
   LahanModel _lahanModel;
   TextEditingController nama_lahanController = TextEditingController();
-    TextEditingController luas_lahan_klonalController = TextEditingController();
+  TextEditingController luas_lahan_klonalController = TextEditingController();
   TextEditingController luas_lahan_totalController = TextEditingController();
   TextEditingController luas_lahan_seedlingController = TextEditingController();
   TextEditingController param1Controller = TextEditingController();
@@ -145,7 +145,8 @@ class _LahanPostState extends State<LahanPost> {
                           textStyle: TextStyle(fontSize: 25)),
                       onPressed: () async {
                         String nama_lahan = nama_lahanController.text;
-                        String luas_lahan_klonal = luas_lahan_klonalController.text;
+                        String luas_lahan_klonal =
+                            luas_lahan_klonalController.text;
                         String luas_lahan_total =
                             luas_lahan_totalController.text;
                         String luas_lahan_seedling =
@@ -156,8 +157,12 @@ class _LahanPostState extends State<LahanPost> {
                             luas_lahan_total +
                             param1);
 
-                        LahanModel user = await submitData(nama_lahan, luas_lahan_klonal,
-                            luas_lahan_total, luas_lahan_seedling, param1);
+                        LahanModel user = await submitData(
+                            nama_lahan,
+                            luas_lahan_klonal,
+                            luas_lahan_total,
+                            luas_lahan_seedling,
+                            param1);
                         setState(() {
                           _lahanModel = user;
                         });
