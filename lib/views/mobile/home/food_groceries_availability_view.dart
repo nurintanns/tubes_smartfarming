@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:swiggy_ui/utils/app_colors.dart';
 import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:swiggy_ui/views/mobile/home/Beranda/homepage.dart';
+import 'package:swiggy_ui/views/mobile/home/Plant/home.dart';
 import 'package:swiggy_ui/views/mobile/home/Plant/main.dart';
 import 'package:swiggy_ui/views/mobile/home/genie/genie_screen.dart';
 import 'package:swiggy_ui/views/mobile/home/news/news_screen.dart';
@@ -260,7 +262,7 @@ class _FoodGroceriesAvailabilityView
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const GenieScreen(),
+                            builder: (context) => HomePageLahan(),
                           ),
                         );
                       },
