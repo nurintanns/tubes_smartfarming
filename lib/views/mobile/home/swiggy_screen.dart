@@ -7,9 +7,7 @@ import 'package:smartfarming/widgets/responsive.dart';
 
 import 'best_in_safety_view.dart';
 import 'food_groceries_availability_view.dart';
-import 'genie/genie_view.dart';
 import 'in_the_spotlight_view.dart';
-import 'indian_food/indian_food_view.dart';
 import 'popular_categories_view.dart';
 import 'swiggy_safety_banner_view.dart';
 
@@ -31,14 +29,10 @@ class SwiggyScreen extends StatelessWidget {
                   children: <Widget>[
                     const FoodGroceriesAvailabilityView(),
                     const CustomDividerView(),
-                    IndianFoodView(),
-                    const CustomDividerView(),
                     InTheSpotlightView(),
                     const CustomDividerView(),
                     const SwiggySafetyBannerView(),
                     BestInSafetyViews(),
-                    const CustomDividerView(),
-                    const GenieView(),
                     const CustomDividerView(),
                     PopularCategoriesView(),
                     const LiveForFoodView(),

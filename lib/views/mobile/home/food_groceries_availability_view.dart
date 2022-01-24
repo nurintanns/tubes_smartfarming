@@ -4,13 +4,11 @@ import 'package:smartfarming/utils/ui_helper.dart';
 import 'package:smartfarming/views/mobile/home/Beranda/homepage.dart';
 import 'package:smartfarming/views/mobile/home/Plant/home.dart';
 import 'package:smartfarming/views/mobile/home/Plant/main.dart';
-import 'package:smartfarming/views/mobile/home/genie/genie_screen.dart';
 import 'package:smartfarming/views/mobile/home/news/news_screen.dart';
 import 'package:smartfarming/widgets/responsive.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 import 'genie/genie_grocery_card_view.dart';
-import 'meat/meat_screen.dart';
 
 class CarouselModel {
   var image;
