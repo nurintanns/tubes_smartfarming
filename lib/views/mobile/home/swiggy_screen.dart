@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/spotlight_best_top_food.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/custom_divider_view.dart';
-import 'package:swiggy_ui/widgets/responsive.dart';
+import 'package:smartfarming/models/spotlight_best_top_food.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/widgets/custom_divider_view.dart';
+import 'package:smartfarming/widgets/responsive.dart';
 
 import 'best_in_safety_view.dart';
 import 'food_groceries_availability_view.dart';

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/views/mobile/home/genie/genie_screen.dart';
-import 'package:swiggy_ui/views/mobile/home/news/news_screen.dart';
-import 'package:swiggy_ui/widgets/responsive.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/views/mobile/home/Beranda/homepage.dart';
+import 'package:smartfarming/views/mobile/home/Plant/home.dart';
+import 'package:smartfarming/views/mobile/home/Plant/main.dart';
+import 'package:smartfarming/views/mobile/home/genie/genie_screen.dart';
+import 'package:smartfarming/views/mobile/home/news/news_screen.dart';
+import 'package:smartfarming/widgets/responsive.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 import 'genie/genie_grocery_card_view.dart';
@@ -259,13 +262,13 @@ class _FoodGroceriesAvailabilityView
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const GenieScreen(),
+                            builder: (context) => HomePageLahan(),
                           ),
                         );
                       },
               ),
               GenieGroceryCardView(
-                title: 'Kamus',
+                title: 'Tumbuhan',
                 subtitle: 'Fesh meat\ndelivered safe',
                 image: 'assets/images/food6.jpg',
                 onTap: isTabletDesktop
@@ -274,7 +277,7 @@ class _FoodGroceriesAvailabilityView
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MeatScreen(),
+                            builder: (context) => MyAppPlant(),
                           ),
                         );
                       },

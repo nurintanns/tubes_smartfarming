@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy_ui/models/genie.dart';
-import 'package:swiggy_ui/utils/app_colors.dart';
-import 'package:swiggy_ui/utils/ui_helper.dart';
-import 'package:swiggy_ui/widgets/custom_divider_view.dart';
+import 'package:smartfarming/models/genie.dart';
+import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/utils/ui_helper.dart';
+import 'package:smartfarming/widgets/custom_divider_view.dart';
 
 class GenieScreen extends StatelessWidget {
   const GenieScreen({Key? key}) : super(key: key);
