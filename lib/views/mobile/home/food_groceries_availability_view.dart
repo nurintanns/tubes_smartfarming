@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swiggy_ui/utils/app_colors.dart';
 import 'package:swiggy_ui/utils/ui_helper.dart';
+import 'package:swiggy_ui/views/mobile/home/Plant/main.dart';
 import 'package:swiggy_ui/views/mobile/home/genie/genie_screen.dart';
 import 'package:swiggy_ui/views/mobile/home/news/news_screen.dart';
 import 'package:swiggy_ui/widgets/responsive.dart';
@@ -265,7 +266,7 @@ class _FoodGroceriesAvailabilityView
                       },
               ),
               GenieGroceryCardView(
-                title: 'Kamus',
+                title: 'Tumbuhan',
                 subtitle: 'Fesh meat\ndelivered safe',
                 image: 'assets/images/food6.jpg',
                 onTap: isTabletDesktop
@@ -274,7 +275,7 @@ class _FoodGroceriesAvailabilityView
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MeatScreen(),
+                            builder: (context) => MyAppPlant(),
                           ),
                         );
                       },
