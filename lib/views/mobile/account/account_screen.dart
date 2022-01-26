@@ -6,15 +6,15 @@ import 'package:smartfarming/widgets/dotted_seperator_view.dart';
 
 class AccountScreen extends StatelessWidget {
   final List<String> titles = [
-    'My Account',
-    'SUPER Expired',
-    'Swiggy Money',
+    'Nama Kelompok',
+    'Alsha Nabilla H',
+    'Nur Intan Sari',
     'Help',
   ];
   final List<String> body = [
-    'Address, Payments, Favourties, Referrals & Offers',
-    'You had a great savings run. Get SUPER again',
-    'Balance & Transactions',
+    '',
+    '1202184327',
+    '1202184237',
     'FAQ & Links',
   ];
 
@@ -72,7 +72,7 @@ class _AppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                'VINOTH',
+                'KELOMPOK SMARTFARMING',
                 style: Theme.of(context)
                     .textTheme
                     .headline6!
@@ -93,7 +93,7 @@ class _AppBar extends StatelessWidget {
           UIHelper.verticalSpaceSmall(),
           Row(
             children: <Widget>[
-              Text('8870123456', style: subtitleStyle),
+              Text('120218', style: subtitleStyle),
               UIHelper.horizontalSpaceSmall(),
               ClipOval(
                 child: Container(
@@ -103,7 +103,7 @@ class _AppBar extends StatelessWidget {
                 ),
               ),
               UIHelper.horizontalSpaceSmall(),
-              Text('vinothvino@icloud.com', style: subtitleStyle)
+              Text('sisteminformasit@telkom.com', style: subtitleStyle)
             ],
           ),
           UIHelper.verticalSpaceLarge(),
