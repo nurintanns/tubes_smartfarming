@@ -85,19 +85,19 @@ class _LahanPostState extends State<LahanPost> {
                       hintText: 'Masukan Nama Lahan'),
                   controller: nama_lahanController,
                 ),
-                /*    SizedBox(height: 10),
-                TextField(
-                  decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.orange),
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                      hintText: 'Masukkan Luas Lahan Klonal'),
-                  controller: luas_lahan_klonalController,
-                ),*/
+                // SizedBox(height: 10),
+                // TextField(
+                //   decoration: InputDecoration(
+                //       filled: true,
+                //       fillColor: Colors.white,
+                //       border: OutlineInputBorder(
+                //           borderRadius: BorderRadius.all(Radius.circular(15))),
+                //       focusedBorder: OutlineInputBorder(
+                //           borderSide: BorderSide(color: Colors.orange),
+                //           borderRadius: BorderRadius.all(Radius.circular(15))),
+                //       hintText: 'Masukkan Luas Lahan Klonal'),
+                //   controller: luas_lahan_klonalController,
+                // ),
                 SizedBox(height: 10),
                 TextField(
                   decoration: InputDecoration(
