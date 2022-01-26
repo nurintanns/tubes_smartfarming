@@ -17,44 +17,38 @@ class _HomePageState extends State<HomePage> {
     Product(
       image: '1.png',
       title: 'Succulent Plant',
-      price: 29.99,
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'In botany, succulent plants, also known as succulents, are plants with parts that are thickened, fleshy, and engorged, usually to retain water in arid climates or soil conditions. It is a characteristic that is not used scientifically for the definition of most families and genera of plants because it often can be used as an accurate characteristic only at the single species level. The word succulent comes from the Latin word sucus, meaning juice, or sap', 
     ),
     Product(
       image: '5.png',
       title: 'Dragon Plant',
-      price: 25.99,
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'Dracaena marginata, more commonly known as a dragon tree, is an attractive plant with green sword-like, red-edged leaves. Native to Madagascar, the eye-catching spiky tree is known as a great entry plant for household gardeners—its easy to care for, drought-tolerant, and nearly indestructible. The slow-growing plant can be planted year-round and boasts tiny white flowers in the spring (though it rarely flowers indoors). This small tree will grow to about 20 feet in warm outdoor climates, but it is generally grown as a potted houseplant and kept pruned to 6 feet or less. Keep the dragon tree away from pets because its toxic to animals if ingested',
     ),
     Product(
       image: '6.png',
-      title: 'Raevnea Plant',
-      price: 22.99,
+      title: 'Ravenea Plant',
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'Majesty palm (Ravenea rivularis) is an indoor tree with long arching green fronds atop multiple stems. It is usually grown as a large houseplant, though it can reach heights of up to 90 feet in its native outdoor environment. As a houseplant, it resembles a kentia palm when young and a royal palm when mature. This is high praise since these are two of the more attractive of all indoor palms. When grown indoors, majesty palm is a slow-growing plant, adding no more than 1 foot per year until it reaches about 10 feet in height.',
     ),
     Product(
       image: '2.png',
       title: 'Potted Plant',
-      price: 24.99,
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'A houseplant is a plant that is grown indoors in places such as residences and offices, mainly for decorative purposes, but studies have also shown them to have positive psychological effects. They also help with indoor air purification, since some species, and the soil-dwelling microbes associated with them, reduce indoor air pollution by absorbing volatile organic compounds including benzene, formaldehyde, and trichloroethylene. While generally toxic to humans, such pollutants are absorbed by the plant and its soil-dwelling microbes without harm.',
     ),
     Product(
       image: '4.png',
-      title: 'Ipsum Plant',
-      price: 30.99,
+      title: 'Ficus elastica',
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'Ficus elastica, the rubber fig, rubber bush, rubber tree, rubber plant, or Indian rubber bush, Indian rubber tree, is a species of flowering plant in the family Moraceae, native to eastern parts of South Asia and southeast Asia. It has become naturalized in Sri Lanka, the West Indies, and the US State of Florida',
     ),
     Product(
       image: '3.png',
-      title: 'Lorem Plant',
-      price: 19.99,
+      title: 'Spider Plant',
       desc:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          'Chlorophytum comosum, usually called spider plant but also known as spider ivy, ribbon plant (a name it shares with Dracaena sanderiana), and hen and chickens is a species of evergreen perennial flowering plant. It is native to tropical and southern Africa, but has become naturalized in other parts of the world, including western Australia. Chlorophytum comosum is easy to grow as a houseplant; variegated forms are the most popular',
     ),
   ];
 
@@ -63,11 +57,12 @@ class _HomePageState extends State<HomePage> {
     return Container(
       margin: EdgeInsets.only(top: 18, left: 14, right: 14),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              
               IconButton(
               icon: const Icon(
                 Icons.arrow_back,
@@ -80,11 +75,12 @@ class _HomePageState extends State<HomePage> {
                           ),
                         )
               ),
-              Text(
+              
+              const Text(
                 'Ensiklopedia Tumbuhan',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-  
               ),
+              
             ],
           ),
           Row(
@@ -118,8 +114,6 @@ class _HomePageState extends State<HomePage> {
                   child: _productItem(
                     title: _product[index].title,
                     image: _product[index].image,
-                    price: _product[index].price.toString(),
-                    isFavorited: Random().nextBool(),
                   ),
                 );
               },
@@ -129,31 +123,6 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
-      ),
-    );
-  }
-
-  Widget _searchBox() {
-    return Expanded(
-      child: TextField(
-        decoration: InputDecoration(
-          hintText: 'Search',
-          prefixIcon: Icon(
-            Icons.search,
-            size: 30,
-          ),
-          filled: true,
-          fillColor: Colors.grey.shade200,
-          contentPadding: EdgeInsets.all(15),
-          enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.grey.shade200),
-            borderRadius: BorderRadius.circular(15),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.grey.shade200),
-            borderRadius: BorderRadius.circular(15),
-          ),
-        ),
       ),
     );
   }
@@ -203,7 +172,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _productItem(
-      {required String title, image, price, required bool isFavorited}) {
+      {required String title, image }) {
     return Container(
       padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -217,20 +186,6 @@ class _HomePageState extends State<HomePage> {
             children: [
               Stack(
                 children: [
-                  Positioned.fill(
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Container(
-                        height: 25,
-                        width: 100,
-                        decoration: new BoxDecoration(
-                          color: Colors.grey.shade300,
-                          borderRadius:
-                              BorderRadius.all(Radius.elliptical(100, 25)),
-                        ),
-                      ),
-                    ),
-                  ),
                   Center(
                     child: Image.asset(
                       'assets/images/$image',
@@ -244,14 +199,7 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.topRight,
                 child: Container(
                   padding: EdgeInsets.all(6),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: isFavorited
-                        ? Colors.pink.shade100
-                        : Colors.grey.shade400,
-                  ),
-                  child: Icon(Icons.favorite,
-                      color: isFavorited ? Colors.pink : Colors.black),
+        
                 ),
               ),
             ],
@@ -266,18 +214,7 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                '\$$price',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              Container(
-                padding: EdgeInsets.all(4),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.shade400,
-                ),
-                child: Icon(Icons.add, color: Colors.white),
-              ),
+
             ],
           ),
         ],
@@ -288,13 +225,11 @@ class _HomePageState extends State<HomePage> {
 
 class Product {
   String title;
-  double price;
   String image;
   String desc;
 
   Product(
       {required this.title,
-      required this.price,
       required this.image,
       required this.desc});
 }

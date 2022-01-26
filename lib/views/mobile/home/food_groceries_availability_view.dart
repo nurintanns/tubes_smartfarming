@@ -77,7 +77,7 @@ class _FoodGroceriesAvailabilityView
                   child: Column(
                     children: <Widget>[
                       Text(
-                        'We are now deliverying food groceries and other essentials.',
+                        'powered by passionate professionals & dreams about making agriculture more sustainable',
                         style: Theme.of(context).textTheme.headline4,
                       ),
                       UIHelper.verticalSpaceSmall(),
