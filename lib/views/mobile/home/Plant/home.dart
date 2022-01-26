@@ -1,8 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:smartfarming/main.dart';
 import 'package:smartfarming/views/mobile/home/Plant/detail.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
+import '../food_groceries_availability_view.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -65,26 +68,24 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                'Welcome to',
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              IconButton(
+              icon: const Icon(
+                Icons.arrow_back,
+                color: Colors.black,
               ),
-              Icon(
-                Icons.shopping_cart_rounded,
-                size: 30,
-              )
+              onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MyApp(),
+                          ),
+                        )
+              ),
+              Text(
+                'Ensiklopedia Tumbuhan',
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+  
+              ),
             ],
-          ),
-          Text(
-            'Plant Shop',
-            style: TextStyle(
-                fontSize: 35, fontWeight: FontWeight.bold, color: Colors.green),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 35),
-            child: Row(
-              children: [_searchBox(), _sortButton()],
-            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
