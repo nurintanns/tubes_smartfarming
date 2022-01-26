@@ -54,7 +54,7 @@ class DetailsScreen extends StatelessWidget {
                             ),
                             Icon(Icons.date_range),
                             Text(
-                              item.author,
+                              item.date,
                               style: TextStyle(
                                 fontSize: 12.0,
                               ),
@@ -65,7 +65,7 @@ class DetailsScreen extends StatelessWidget {
                           height: 20.0,
                         ),
                         Text(
-                          lipsum.createParagraph(numParagraphs: 3),
+                          "JAKARTA - Setelah semalam menghadiri Haul Ki Ageng Gribig di Jatinom, Klaten, Jawa Tengah, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto hari ini blusukan ke sawah meninjau lokasi pertanian yang dikembangkan oleh petani milenial dengan konsep smart farming di Klaten, Jawa Tengah. Airlangga pun rela menceburkan diri ke sawah dengan boot penuh lumpur demi melihat Program Millenial Smartfarming yang dikembangkan petani milenial asal Klaten bernama Hartoyo. Menurut Airlangga program smart framing merupakan ekosistem pemberdayaan milenial melalui pembinaan dan pengembangan ekosistem pertanian digital (IoT) dari hulu ke hilir serta meningkatkan Inklusi Keuangan Desa.",
                           style: TextStyle(
                             fontSize: 18.0,
                           ),
