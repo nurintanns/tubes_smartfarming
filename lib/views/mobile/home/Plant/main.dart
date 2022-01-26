@@ -2,24 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 
-void main() {
-  runApp(MyAppPlant());
-}
-
-class MyAppPlant extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Plant Shop',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: MainPage(),
-    );
-  }
-}
-
 class MainPage extends StatefulWidget {
   @override
   MainPageState createState() => MainPageState();
@@ -47,6 +29,21 @@ class MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 90.0,
+        leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+            onPressed: () => Navigator.pop(context)),
+        backgroundColor: Color(0xFFFAFAFA),
+        centerTitle: true,
+        title: Text(
+          "Ensiklopedia Tumbuhan",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       body: SafeArea(
         child: _buildPage(),
       ),

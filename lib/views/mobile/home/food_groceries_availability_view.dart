@@ -168,7 +168,7 @@ class _FoodGroceriesAvailabilityView
               ),
               GenieGroceryCardView(
                 title: 'Lahan',
-                subtitle: 'Esentials delivered\nin 2 Hrs',
+                subtitle: 'Essential \nland info',
                 image: 'assets/images/land.jpg',
                 onTap: isTabletDesktop
                     ? () {}
@@ -183,7 +183,7 @@ class _FoodGroceriesAvailabilityView
               ),
               GenieGroceryCardView(
                 title: 'Tumbuhan',
-                subtitle: 'Fesh meat\ndelivered safe',
+                subtitle: 'Interesting \nplant encyclopedia',
                 image: 'assets/images/plant.jpg',
                 onTap: isTabletDesktop
                     ? () {}
@@ -191,7 +191,7 @@ class _FoodGroceriesAvailabilityView
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MyAppPlant(),
+                            builder: (context) => MainPage(),
                           ),
                         );
                       },

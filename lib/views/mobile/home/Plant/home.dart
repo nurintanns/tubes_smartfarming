@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       image: '1.png',
       title: 'Succulent Plant',
       desc:
-          'In botany, succulent plants, also known as succulents, are plants with parts that are thickened, fleshy, and engorged, usually to retain water in arid climates or soil conditions. It is a characteristic that is not used scientifically for the definition of most families and genera of plants because it often can be used as an accurate characteristic only at the single species level. The word succulent comes from the Latin word sucus, meaning juice, or sap', 
+          'In botany, succulent plants, also known as succulents, are plants with parts that are thickened, fleshy, and engorged, usually to retain water in arid climates or soil conditions. It is a characteristic that is not used scientifically for the definition of most families and genera of plants because it often can be used as an accurate characteristic only at the single species level. The word succulent comes from the Latin word sucus, meaning juice, or sap',
     ),
     Product(
       image: '5.png',
@@ -59,30 +59,6 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-           mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              
-              IconButton(
-              icon: const Icon(
-                Icons.arrow_back,
-                color: Colors.black,
-              ),
-              onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const MyApp(),
-                          ),
-                        )
-              ),
-              
-              const Text(
-                'Ensiklopedia Tumbuhan',
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-              ),
-              
-            ],
-          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -171,8 +147,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _productItem(
-      {required String title, image }) {
+  Widget _productItem({required String title, image}) {
     return Container(
       padding: EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -199,7 +174,6 @@ class _HomePageState extends State<HomePage> {
                 alignment: Alignment.topRight,
                 child: Container(
                   padding: EdgeInsets.all(6),
-        
                 ),
               ),
             ],
@@ -213,9 +187,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-
-            ],
+            children: [],
           ),
         ],
       ),
@@ -228,8 +200,5 @@ class Product {
   String image;
   String desc;
 
-  Product(
-      {required this.title,
-      required this.image,
-      required this.desc});
+  Product({required this.title, required this.image, required this.desc});
 }
