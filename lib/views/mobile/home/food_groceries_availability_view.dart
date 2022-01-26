@@ -9,6 +9,7 @@ import 'package:smartfarming/widgets/responsive.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 import 'genie/genie_grocery_card_view.dart';
+import 'lahan_page/Beranda/home_slider.dart';
 
 class CarouselModel {
   var image;
