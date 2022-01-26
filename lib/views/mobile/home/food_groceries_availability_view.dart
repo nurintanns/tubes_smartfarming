@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarming/utils/app_colors.dart';
 import 'package:smartfarming/utils/ui_helper.dart';
-import 'package:smartfarming/views/mobile/home/Beranda/homepage.dart';
+import 'package:smartfarming/views/mobile/home/lahan_page/Beranda/home_slider.dart';
 import 'package:smartfarming/views/mobile/home/Plant/home.dart';
 import 'package:smartfarming/views/mobile/home/Plant/main.dart';
 import 'package:smartfarming/views/mobile/home/news/news_screen.dart';

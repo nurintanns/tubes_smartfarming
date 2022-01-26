@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartfarming/splashscreen.dart';
 
 import 'shared/app_theme.dart';
 import 'views/mobile/mobile_screen.dart';
@@ -14,12 +15,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SwiggyUI',
+      title: 'Smartfarming',
       debugShowCheckedModeBanner: false,
       theme: appPrimaryTheme(),
-      home: const Responsive(
-        mobile: MobileScreen(),
-      ),
+      home: SplashScreenPage(),
     );
   }
 }

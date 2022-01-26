@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Beranda/home_slider.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/postAPI/lahan_post_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:smartfarming/utils/app_colors.dart';
 
 class LahanPostHeader extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class LahanPostHeader extends StatelessWidget {
             title: new Text(
               "Masukkan Lahan",
             ),
-            backgroundColor: Color(0xff33691e),
+            backgroundColor: darkOrange,
             leading: new IconButton(
               icon: new Icon(Icons.arrow_back),
               onPressed: () {
@@ -173,6 +174,6 @@ class _LahanPostState extends State<LahanPost> {
             ),
           ),
         ),
-        backgroundColor: Color(0xff558b2f));
+        backgroundColor: swiggyOrange);
   }
 }

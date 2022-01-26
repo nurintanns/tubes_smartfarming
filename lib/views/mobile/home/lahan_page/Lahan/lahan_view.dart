@@ -5,17 +5,18 @@ import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/movie.da
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/detailed_screen.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/submit_form.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Beranda/home_slider.dart';
+import 'package:smartfarming/utils/app_colors.dart';
 
 class LahanHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff558b2f),
+        backgroundColor: swiggyOrange,
         appBar: new AppBar(
             title: new Text(
               "Informasi Lahan",
             ),
-            backgroundColor: Color(0xff33691e),
+            backgroundColor: darkOrange,
             leading: new IconButton(
               icon: new Icon(Icons.arrow_back),
               onPressed: () {
@@ -172,6 +173,6 @@ class _LahanCardState extends State<LahanCard> {
                   },
                   itemCount: movies.length,
                 )),
-        backgroundColor: Color(0xff558b2f));
+        backgroundColor: swiggyOrange);
   }
 }

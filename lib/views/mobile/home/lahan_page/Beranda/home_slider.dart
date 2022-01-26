@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/postAPI/lahan_post_data.dart';
+import 'package:smartfarming/utils/app_colors.dart';
 
 final List<String> imgList = [
   'https://pesonajatim.com/wp-content/uploads/2019/07/Kebun-Teh-Andung-Biru-2.jpg',
@@ -13,7 +14,7 @@ class HomePageLahan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff558b2f),
+        backgroundColor: swiggyOrange,
         appBar: AppBar(
           leading: IconButton(
               icon: const Icon(

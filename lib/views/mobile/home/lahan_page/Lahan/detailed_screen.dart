@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/movie.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart';
+import 'package:smartfarming/utils/app_colors.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key, required this.movie}) : super(key: key);
@@ -10,10 +11,10 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Color(0xff558b2f),
+          backgroundColor: swiggyOrange,
           appBar: AppBar(
             title: Text(movie.nama_lahan),
-            backgroundColor: Color(0xff33691e),
+            backgroundColor: darkOrange,
             leading: new IconButton(
               icon: new Icon(Icons.arrow_back),
               onPressed: () {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/dataAPI/prediksi.dart';
+import 'package:smartfarming/utils/app_colors.dart';
 
 class SubmitFormHeader extends StatelessWidget {
   const SubmitFormHeader({Key? key, required this.prediksi}) : super(key: key);
@@ -9,10 +10,10 @@ class SubmitFormHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff558b2f),
+        backgroundColor: swiggyOrange,
         appBar: new AppBar(
             title: new Text(prediksi.nama_lahan),
-            backgroundColor: Color(0xff33691e),
+            backgroundColor: darkOrange,
             leading: new IconButton(
               icon: new Icon(Icons.arrow_back),
               onPressed: () {
