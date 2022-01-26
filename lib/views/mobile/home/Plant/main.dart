@@ -47,33 +47,6 @@ class MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Container(
-        height: 75,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.only(
-            topRight: Radius.circular(30),
-            topLeft: Radius.circular(30),
-          ),
-          boxShadow: [
-            BoxShadow(color: Colors.black12, spreadRadius: 0, blurRadius: 10),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(25),
-            topRight: Radius.circular(25),
-          ),
-          child: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            items: _bottomTabs
-                .map((tabItem) => _bottomNavigationBarItem(tabItem))
-                .toList(),
-            onTap: _onSelectTab,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-          ),
-        ),
-      ),
       body: SafeArea(
         child: _buildPage(),
       ),
