@@ -82,7 +82,7 @@ class _FoodGroceriesAvailabilityView
                       ),
                       UIHelper.verticalSpaceSmall(),
                       Text(
-                        'Food & Genie service (Mon-Sat)-6:00 am to 9:00pm. Groceries & Meat (Mon-Sat)-6:00 am to 6:00pm. Dairy (Mon-Sat)-6:00 am to 6:00pm (Sun)-6:00 am to 12:00 pm',
+                        'The component of smartfarming technique is use of Information Technology and various technologies like sensors, automated hardware, and so on.',
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.bodyText1!.copyWith(
                               fontSize: 16.0,
