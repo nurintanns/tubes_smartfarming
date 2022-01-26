@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartfarming/views/mobile/account/notification_screen.dart';
 import 'package:smartfarming/views/mobile/search/search_screen.dart';
 import 'package:smartfarming/views/mobile/home/swiggy_screen.dart';
 
@@ -17,7 +18,7 @@ class _HomeBottomNavigationScreenState
     extends State<HomeBottomNavigationScreen> {
   final List<Widget> _children = [
     const SwiggyScreen(),
-    const SearchScreen(),
+    NotificationScreen(),
     AccountScreen(),
   ];
 
