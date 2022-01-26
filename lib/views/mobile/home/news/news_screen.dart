@@ -115,7 +115,7 @@ class _NewsPageState extends State<NewsPage>
         backgroundColor: Color(0xFFFAFAFA),
         centerTitle: true,
         title: Text(
-          "News Smartfarming",
+          "Berita",
           style: TextStyle(color: Colors.black),
         ),
         bottom: PreferredSize(

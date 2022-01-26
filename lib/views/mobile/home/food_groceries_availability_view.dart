@@ -152,9 +152,9 @@ class _FoodGroceriesAvailabilityView
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               GenieGroceryCardView(
-                title: 'News',
+                title: 'Berita',
                 subtitle: 'Anything you need,\ndelivered',
-                image: 'assets/images/food1.jpg',
+                image: 'assets/images/news.jpg',
                 onTap: isTabletDesktop
                     ? () {}
                     : () {
@@ -169,7 +169,7 @@ class _FoodGroceriesAvailabilityView
               GenieGroceryCardView(
                 title: 'Lahan',
                 subtitle: 'Esentials delivered\nin 2 Hrs',
-                image: 'assets/images/food4.jpg',
+                image: 'assets/images/land.jpg',
                 onTap: isTabletDesktop
                     ? () {}
                     : () {
@@ -184,7 +184,7 @@ class _FoodGroceriesAvailabilityView
               GenieGroceryCardView(
                 title: 'Tumbuhan',
                 subtitle: 'Fesh meat\ndelivered safe',
-                image: 'assets/images/food6.jpg',
+                image: 'assets/images/plant.jpg',
                 onTap: isTabletDesktop
                     ? () {}
                     : () {
