@@ -24,10 +24,6 @@ class DetailPage extends StatelessWidget {
                       size: 30,
                     ),
                   ),
-                  Icon(
-                    Icons.shopping_cart_rounded,
-                    size: 30,
-                  )
                 ],
               ),
             ),
@@ -84,24 +80,7 @@ class DetailPage extends StatelessWidget {
     return ListView(
       physics: BouncingScrollPhysics(),
       children: [
-        Row(
-          children: [
-            SizedBox(
-              width: 48,
-              child: Divider(
-                thickness: 5,
-                color: Colors.black,
-              ),
-            ),
-            SizedBox(
-              width: 8,
-            ),
-            Text(
-              'Best choice',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            )
-          ],
-        ),
+        
         SizedBox(height: 24),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -110,22 +89,6 @@ class DetailPage extends StatelessWidget {
               '${product.title}',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
             ),
-            Container(
-              padding: EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    bottomLeft: Radius.circular(25),
-                  ),
-                  color: Colors.green),
-              child: Text(
-                ' \$${product.price}',
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-            )
           ],
         ),
         SizedBox(
@@ -147,50 +110,6 @@ class DetailPage extends StatelessWidget {
         SizedBox(
           height: 14,
         ),
-        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Row(
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: Icon(Icons.remove),
-              ),
-              SizedBox(
-                width: 14,
-              ),
-              Text(
-                '1',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-              ),
-              SizedBox(
-                width: 14,
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Icon(Icons.add),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 14),
-            child: ElevatedButton(
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 18, horizontal: 48),
-                child: Text(
-                  'Buy',
-                  style: TextStyle(fontSize: 18),
-                ),
-              ),
-              onPressed: () {},
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(28),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ]),
         SizedBox(
           height: 48,
         ),
