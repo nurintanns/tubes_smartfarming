@@ -16,6 +16,7 @@ class HomePageLahan extends StatelessWidget {
     return Scaffold(
         backgroundColor: swiggyOrange,
         appBar: AppBar(
+          toolbarHeight: 90.0,
           leading: IconButton(
               icon: const Icon(
                 Icons.arrow_back,
