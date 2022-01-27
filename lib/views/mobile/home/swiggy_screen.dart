@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smartfarming/models/spotlight_best_top_food.dart';
 import 'package:smartfarming/utils/app_colors.dart';
 import 'package:smartfarming/utils/ui_helper.dart';
 import 'package:smartfarming/widgets/custom_divider_view.dart';
 import 'package:smartfarming/widgets/responsive.dart';
 
-import 'best_in_safety_view.dart';
 import 'food_groceries_availability_view.dart';
-import 'in_the_spotlight_view.dart';
-import 'popular_categories_view.dart';
-import 'swiggy_safety_banner_view.dart';
 
 class SwiggyScreen extends StatelessWidget {
   const SwiggyScreen({Key? key}) : super(key: key);
@@ -29,13 +24,6 @@ class SwiggyScreen extends StatelessWidget {
                   children: <Widget>[
                     const FoodGroceriesAvailabilityView(),
                     const CustomDividerView(),
-                    // InTheSpotlightView(),
-                    // const CustomDividerView(),
-                    // const SwiggySafetyBannerView(),
-                    // BestInSafetyViews(),
-                    // const CustomDividerView(),
-                    // PopularCategoriesView(),
-                    // const LiveForFoodView(),
                   ],
                 ),
               ),

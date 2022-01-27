@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/account/notification_screen.dart';
-import 'package:smartfarming/views/mobile/search/search_screen.dart';
 import 'package:smartfarming/views/mobile/home/swiggy_screen.dart';
 
 import '../../utils/app_colors.dart';
