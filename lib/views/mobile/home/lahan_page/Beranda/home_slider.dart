@@ -3,6 +3,7 @@ import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart'
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/postAPI/lahan_post_data.dart';
 import 'package:smartfarming/utils/app_colors.dart';
 import 'package:smartfarming/views/mobile/home/swiggy_screen.dart';
+import 'package:smartfarming/views/mobile/home_bottom_navigation_screen.dart';
 
 final List<String> imgList = [
   'https://pesonajatim.com/wp-content/uploads/2019/07/Kebun-Teh-Andung-Biru-2.jpg',
@@ -26,7 +27,8 @@ class HomePageLahan extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SwiggyScreen()),
+                MaterialPageRoute(
+                    builder: (context) => HomeBottomNavigationScreen()),
               );
             },
           ),
