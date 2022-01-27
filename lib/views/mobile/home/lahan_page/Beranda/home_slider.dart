@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/lahan_view.dart';
 import 'package:smartfarming/views/mobile/home/lahan_page/Lahan/postAPI/lahan_post_data.dart';
 import 'package:smartfarming/utils/app_colors.dart';
+import 'package:smartfarming/views/mobile/home/swiggy_screen.dart';
 
 final List<String> imgList = [
   'https://pesonajatim.com/wp-content/uploads/2019/07/Kebun-Teh-Andung-Biru-2.jpg',
@@ -18,11 +19,17 @@ class HomePageLahan extends StatelessWidget {
         appBar: AppBar(
           toolbarHeight: 90.0,
           leading: IconButton(
-              icon: const Icon(
-                Icons.arrow_back,
-                color: Colors.black,
-              ),
-              onPressed: () => Navigator.pop(context)),
+            icon: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SwiggyScreen()),
+              );
+            },
+          ),
           backgroundColor: Color(0xFFFAFAFA),
           centerTitle: true,
           title: Text(
